@@ -1,0 +1,235 @@
+app:
+    dashboard: 'System Dashboard'
+    messages:
+        please_login: 'Please login'
+        user_edit_success: 'User saved'
+        total_items: 'Total'
+        activities:
+            templates:
+                create_issue: '%user% create issue %issue%'
+                change_issue_activity: '%user% set status %status% to issue %issue%'
+                comment_issue: '%user% commented on issue %issue%'
+        project:
+            remove_member:
+                success: 'User was removed from project'
+                fail: 'Unexpected error while removing user from project'
+            add_member:
+                success: 'User was added to project'
+                fail: 'Unexpected error while adding user to project'
+            edit:
+                    success: 'Project saved'
+                    fail: 'Unexpected error while editing project'
+            add:
+                    success: 'New project created'
+                    fail: 'Unexpected error while creating project'
+            add_issue:
+                    success: 'New issue created'
+                    fail: 'Unexpected error while creating issue'
+            select_project: 'Select project'
+        issue:
+            edit:
+                success: 'Issue saved'
+                fail: 'Unexpected error while editing issue'
+            add_comment:
+                    fail: 'Fail to add comment'
+                    success: 'Comment added'
+        comment:
+            update:
+                success: 'comment saved'
+                fail: 'Error updating comment'
+            remove:
+                success: 'comment removed'
+                fail: 'Error removing comment'
+            commented_at: 'commented at %created%'
+            edited_at: 'edited at %updated%'
+        user:
+            add:
+                success: 'User created'
+                fail: 'Error creating user'
+            update:
+                success: 'User saved'
+                fail: 'Error updating user'
+        error:
+            'oops': 'Oops! Something went wrong!'
+    email: 'Email'
+    title: 'Simple bug tracker'
+    button:
+        submit: 'Submit'
+        cancel: 'Cancel'
+        edit: 'Edit'
+        add: 'Add'
+        project_members: 'Members'
+        add_sub_task: 'Add sub task'
+        comment: 'Comment'
+        save: 'Save'
+    main_menu:
+        home: 'Home'
+        users:
+            root: 'Users'
+            add: 'Create user'
+            list: 'List of users'
+        issues:
+            root: 'Issues'
+            list: 'List of issues'
+            add: 'Create issue'
+        projects:
+            root: 'Projects'
+            add: 'Create project'
+            list: 'List of projects'
+        profile:
+            root: 'Profile'
+            view: 'View profile'
+            edit: 'Edit profile'
+    list:
+        actions: 'Actions'
+    username: 'Username'
+    fullName: 'Full name'
+    titles:
+        users_list: 'Users list'
+        user_add: 'Add user'
+        user_edit: 'Edit user'
+        dashboard: 'System dashboard'
+        user_view: '%user%'
+        projects_list: 'Projects list'
+        project_view: '[%project_code%] %project_label%'
+        project_members_list: 'Members of [%project_code%] %project_label% project'
+        project_members_add: 'Add member to project'
+        project_add: 'Add project'
+        project_edit: 'Edit project'
+        project_issue_add: 'Add issue in project %project_label% [%project_code%]'
+        issue_view: 'Issue %issue_code%'
+        issue_edit: 'Edit issue %issue_code%'
+        issue_list: 'Issues list'
+        issue_sub_task_add: 'Add sub task'
+        comment_edit: 'Edit Comment'
+        mail:
+            create_user: 'New user created'
+            issue_activity: 'Issue activity'
+        error: '%code% - %text%'
+        issue_create: 'Create issue'
+        issue_add: 'New issue'
+    password: 'Password'
+    password_will_be_generated: 'password, If leave empty will be generated'
+    tooltip:
+        user_edit: 'Edit user'
+        user_view: 'View user'
+        project_view: 'View project'
+        project_edit: 'Edit project'
+        project_member_remove: 'Remove member'
+        issue_view: 'View issue'
+        issue_edit: 'Edit issue'
+    avatar: 'Avatar'
+    dashboard_items:
+        related_issues: 'Related Issues'
+        activities: 'Activities'
+        user_info: 'User Information'
+        assigned_issues: 'Assigned Issues'
+        sub_tasks: 'Sub tasks'
+        comments: 'Comments'
+    label: 'Label'
+    summary: 'Summary'
+    issue:
+        issues: 'Issues'
+        assignee: 'Assignee'
+        info: 'Information of issue'
+        code: 'Issue code'
+        unassigned: 'Unassigned'
+        type: 'Issue type'
+        priority: 'Priority'
+        resolution: Resolution
+        status: 'Status'
+        types:
+            bug: 'bug'
+            task: 'task'
+            story: 'story'
+            sub_task: 'sub task'
+        priorities:
+            blocker: 'blocker'
+            major: 'major'
+            minor: 'minor'
+            trivial: 'trivial'
+        resolutions:
+            won_t_do: 'Won''t do'
+            done: 'Done'
+            cannot_reproduce: 'Cannot reproduce'
+            incomplete: 'Incomplete'
+            duplicate: 'Duplicate'
+            won_t_fix: 'Won''t fix'
+            fixed: 'Fixed'
+        statuses:
+            closed: 'Closed'
+            in_progress: 'In progress'
+            open: 'Open'
+        empty_list: 'No issues found'
+        reporter: 'Reporter'
+        project: 'Project'
+        created: 'Created'
+        updated: 'Updated'
+        last_update: 'Last updated'
+        sub_tasks: 'Story sub tasks'
+        story: 'Story'
+        create_issue: 'Create issue'
+    project: 'Project'
+    description: 'Description'
+    assignee: 'Assignee'
+    undefined: 'undefined'
+    errors:
+        issue:
+            not_story_add_sub_task_error: 'Not story! Can''t add sub task'
+    placeholders:
+        your_comment: 'Your comment ...'
+    comment:
+        edit: 'edit comment'
+        remove: 'remove comment'
+    timezone: 'Timezone'
+    mail:
+        create_user:
+            subject: New user
+            invitation: 'Hello, %user_name% in our team'
+            role: 'Your role: %role%'
+            username: 'Your username: %username%'
+            password: 'You password: %password%'
+            login: 'Please login %link%'
+        issue_activity:
+            event: 'Event in issue %issue_code%'
+            issue_link: 'See issue %issue_link%'
+            user_link: 'View user %user_link%'
+            subject: 'Issue activity'
+logout_menu:
+    logout: 'Logout'
+login_form:
+    username: 'Username'
+    password: 'Password'
+user:
+    users: 'Users'
+    add_user: 'Add user'
+    edit_user: 'Edit user'
+    save_user: 'Save user'
+users:
+    user:
+        username: 'username'
+        email: 'user email'
+        fullName: 'user full name'
+        role: 'user role'
+        isActive: 'Active user'
+    empty_list: 'No users found'
+role:
+    undefined: 'Unknown role'
+    administrator: 'Administrator'
+    manager: 'Manager'
+    operator: 'Operator'
+projects:
+    created: 'Сreated'
+    updated: 'Updated'
+    projects: 'Projects'
+    code: 'Code'
+    label: 'Label'
+    empty_list: 'No projects found'
+    issues: 'Project issues'
+    info: 'Projects info'
+    add_member: 'Add member'
+    add_project: 'Create new project'
+    edit: 'Edit project'
+    add_issue: 'Create issue'
+    buttons:
+        back_to_project: 'Back to project'

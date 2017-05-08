@@ -1,0 +1,7 @@
+gen:
+    gitem:
+        labels:
+            gitem: GItem
+            list: List of GItems
+            add: Add GItem
+            remove: ''

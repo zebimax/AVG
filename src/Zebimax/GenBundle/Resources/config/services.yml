@@ -1,0 +1,11 @@
+services:
+#    zebimax_gen.example:
+#        class: Zebimax\GenBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
+
+    zebimax_gen.command.dir_scan:
+        class: 'Zebimax\GenBundle\Command\DirScan'
+        calls:
+            - ['setLogger', ['@logger']]
+        tags:
+            - { name: console.command }
